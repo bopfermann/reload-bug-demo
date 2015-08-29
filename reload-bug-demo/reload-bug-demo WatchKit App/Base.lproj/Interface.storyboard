@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--home-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="home" title="home" id="AgC-eL-Hgc"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="292"/>
+        </scene>
+        <!--target-->
+        <scene sceneID="6PR-zs-OGe">
+            <objects>
+                <controller identifier="target" title="target" hidesWhenLoading="NO" id="drl-Bg-CnM" customClass="InterfaceController" customModule="reload_bug_demo_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Label" textAlignment="center" id="b6K-Hr-1e7"/>
+                        <button width="1" alignment="left" title="Reload" id="4F5-dM-msd">
+                            <connections>
+                                <action selector="reload" destination="drl-Bg-CnM" id="d7z-V6-jzi"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="num" destination="b6K-Hr-1e7" id="wyX-sg-9TP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="409" y="292"/>
+        </scene>
+    </scenes>
+</document>
